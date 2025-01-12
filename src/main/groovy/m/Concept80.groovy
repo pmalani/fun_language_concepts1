@@ -15,15 +15,13 @@ please = { showClosure ->
 
 
 
-
 please show the square_root of 121
 
 
 
 
-
-
-
+//please(show)['the'](square_root)['of'](144)
+//please(show).the(square_root).of(9)
 
 
 
