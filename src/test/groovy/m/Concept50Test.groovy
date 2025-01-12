@@ -12,11 +12,14 @@ class Concept50Test {
 	void setup() {
 		val = new Concept50()
 	}
+
+	@Test
+	void closure() {
+		assertEquals(10, val.times(2, 5))
+	}
 		
 	@Test
 	void partialFunction() {
-		assertEquals(10, val.times(2, 5))
-		
 		def doubleMe = val.times.curry(2)
 		assertEquals(10, doubleMe(5))
 	}
