@@ -7,7 +7,6 @@ class Concept10 {
 			println duck.say();
 		}
 	}
-	
 }
 
 class Duck {

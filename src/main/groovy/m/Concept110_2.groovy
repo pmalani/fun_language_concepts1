@@ -25,4 +25,5 @@ class Concept110_2 {
 			return n
 		}
 	}
+
 }

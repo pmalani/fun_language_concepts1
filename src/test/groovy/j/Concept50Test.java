@@ -37,7 +37,7 @@ public class Concept50Test {
 	}
 	
 	@Test
-	public void methodPointerAKAmethodReference() {
+	public void methodPointerAkaMethodReference() {
 		val.doSomethingUseful(5, System.out::println);
 	}
 	

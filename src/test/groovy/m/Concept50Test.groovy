@@ -34,7 +34,6 @@ public class Concept50Test {
 		val.doSomethingUseful(5, System.out.&println)
 	}
 
-
 	@Test
 	void returnFunction() {
 		def f = val.acc(10)
@@ -42,4 +41,5 @@ public class Concept50Test {
 		println f()
 		println f()
 	}
+	
 }

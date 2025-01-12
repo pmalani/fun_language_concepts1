@@ -1,6 +1,7 @@
 package j;
 
 public class Concept110_5 {
+
 	interface Border {
 		default int getXCoordinate() {
 			return 0;
@@ -21,4 +22,5 @@ public class Concept110_5 {
 			return Border.super.getXCoordinate();
 		}		
 	}
+
 }

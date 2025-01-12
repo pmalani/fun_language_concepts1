@@ -21,4 +21,5 @@ class Concept110_4 {
 	static class BorderedButton2 implements Button, Border {
 		// what is the value of get X Coordinate() ?
 	}
+
 }
