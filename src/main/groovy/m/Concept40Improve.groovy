@@ -1,18 +1,12 @@
 package m
 
-import groovy.transform.Memoized;
-
-import java.util.concurrent.TimeUnit;
+import groovy.transform.Memoized
 
 class Concept40Improve {
 	void printFibsUpto(int n) {
 		for (int i =0; i < n; i++) {
 			println fib(i)
 		}
-	}
-
-	void measure(int n) {
-		fib(n)
 	}
 
 	@Memoized

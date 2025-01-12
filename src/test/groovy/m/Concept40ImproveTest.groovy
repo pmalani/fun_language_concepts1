@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test
 
 
 class Concept40ImproveTest {
+
 	Concept40Improve val
 	
 	@BeforeEach
