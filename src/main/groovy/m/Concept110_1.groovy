@@ -14,7 +14,7 @@ class Concept110_1 {
 		// does seller have name?
 	}
 
-	// Multiple Inheritance
+	// Multiple Inheritance / Diamond Problem
 	// How many name does broker have?	
 //	class Broker extends Buyer, Seller { }
 	
@@ -30,7 +30,7 @@ class Concept110_1 {
 		
 	}
 	
-	// Multiple Inheritance
+	// Multiple Inheritance / Diamond Problem
 	// How many xCoordinate does bordered button have?	
 //	class BorderedButton extends Border, Button {}
 }
