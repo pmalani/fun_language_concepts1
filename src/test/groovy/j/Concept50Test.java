@@ -3,14 +3,15 @@ package j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 
 public class Concept50Test {
+
 	private Concept50 val;
 	
 	@BeforeEach
@@ -21,13 +22,13 @@ public class Concept50Test {
 	// Notice the explicitly apply call
 	@Test
 	public void lambda() {
-		assertThat(i(10), is(val.times.apply(i(2),i(5))));		
+		assertThat(n(10), is(val.times.apply(n(2), n(5))));
 	}
 	
 	@Test
 	public void partialFunction() {
 		UnaryOperator<Number> doubleMe = (a) -> val.times.apply(2, a);
-		assertThat(i(10), is(doubleMe.apply(5)));		
+		assertThat(n(10), is(doubleMe.apply(5)));
 	}
 	
 	@Test
@@ -50,8 +51,8 @@ public class Concept50Test {
 		System.out.println(f.get());
 	}
 	
-	Number i(int i) {
-		return new Double(i);
+	Number n(int n) {
+		return Double.valueOf(n);
 	}
 
 }
