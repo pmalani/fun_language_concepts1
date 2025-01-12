@@ -1,5 +1,6 @@
 package m
 
+// Groovy does have double dispatch
 class Concept20 {
 	static void main(String[] args) {
 		Person p = new Worker()

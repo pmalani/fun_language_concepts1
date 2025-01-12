@@ -1,5 +1,7 @@
 package j;
 
+// Java doesn't have double dispatch
+// How do we achieve double dispatch in Java?
 public class Concept20 {
 	public static void main(String[] args) {
 		Person p = new Worker();
