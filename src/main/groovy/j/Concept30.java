@@ -3,6 +3,7 @@ package j;
 import java.util.List;
 
 public class Concept30 {
+
 	static class Person {
 	}
 	

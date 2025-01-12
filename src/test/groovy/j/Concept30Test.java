@@ -1,10 +1,6 @@
 package j;
 
-import j.Concept30.Club;
-import j.Concept30.Converter;
-import j.Concept30.Factory;
-import j.Concept30.Person;
-import j.Concept30.Worker;
+import j.Concept30.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +9,7 @@ import java.util.List;
 
 
 public class Concept30Test {
+
 	private Person person;
 	private Worker worker;
 	
@@ -52,5 +49,6 @@ public class Concept30Test {
 		factory.collectNew(persons);
 //		factory.collectNew(workers);
 	}
-	
+
+	// So, PECS: Producer extends, Consumer super (see Effective Java)
 }
