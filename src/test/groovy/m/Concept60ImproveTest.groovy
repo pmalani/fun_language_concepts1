@@ -3,6 +3,8 @@ package m
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
+import static org.junit.jupiter.api.Assertions.assertEquals
+
 class Concept60ImproveTest {
 	Concept60Improve val
 	
@@ -13,8 +15,8 @@ class Concept60ImproveTest {
 
 	@Test
 	void fac() {
-		assert val.factorial(1) == 1
-		assert val.factorial(3) == 6
+		assertEquals(1, val.factorial(1))
+		assertEquals(6, val.factorial(3))
 	}
 	
 	@Test

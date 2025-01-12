@@ -1,22 +1,24 @@
 package m
 
 import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test
 
-public class Concept50Test {
+import static org.junit.jupiter.api.Assertions.assertEquals
+
+class Concept50Test {
 	private Concept50 val
 	
 	@BeforeEach
 	void setup() {
-		val = new Concept50();
+		val = new Concept50()
 	}
 		
 	@Test
 	void partialFunction() {
-		assert 10 == val.times(2, 5)
+		assertEquals(10, val.times(2, 5))
 		
 		def doubleMe = val.times.curry(2)
-		assert 10 == doubleMe(5)
+		assertEquals(10, doubleMe(5))
 	}
 	
 	@Test

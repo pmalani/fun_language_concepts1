@@ -3,7 +3,8 @@ package m
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertEquals
+import static org.junit.jupiter.api.Assertions.assertThrows
 
 class Concept60Test {
 	Concept60 val
@@ -15,23 +16,23 @@ class Concept60Test {
 
 	@Test
 	void fac() {
-		assert val.factorial(1) == 1
-		assert val.factorial(3) == 6
+		assertEquals(1, val.factorial(1G))
+		assertEquals(6, val.factorial(3G))
 	}
 	
 	@Test
 	void facLarge() {
-		assertThrows(StackOverflowError.class, { -> println val.factorial(10000) })
+		assertThrows(StackOverflowError.class, { -> println val.factorial(10000G) })
 	}
 	
 	@Test
 	void fac2() {
-		assert val.factorial2(1) == 1
-		assert val.factorial2(3) == 6
+		assertEquals(1, val.factorial2(1G))
+		assertEquals(6, val.factorial2(3G))
 	}
 	
 	@Test
 	void fac2Large() {
-		assertThrows(StackOverflowError.class, { -> println val.factorial2(10000) })
+		assertThrows(StackOverflowError.class, { -> println val.factorial2(10000G) })
 	}
 }
