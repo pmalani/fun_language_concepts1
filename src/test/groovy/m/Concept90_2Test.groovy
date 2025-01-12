@@ -1,8 +1,8 @@
 package m
 
-import j.Concept90_2.LineItem;
+import j.Concept90_2.LineItem
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
 
 class Concept90_2Test {
 	@Test

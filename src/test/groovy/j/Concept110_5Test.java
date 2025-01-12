@@ -1,10 +1,10 @@
 package j;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
-import j.Concept110_5.BorderedButton;
+import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import j.Concept110_5.BorderedButton;
+import org.junit.jupiter.api.Test;
 
 public class Concept110_5Test {
 	

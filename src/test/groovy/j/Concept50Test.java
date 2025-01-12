@@ -1,24 +1,25 @@
 package j;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import org.junit.Before;
-import org.junit.Test;
 
 public class Concept50Test {
 	private Concept50 val;
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		val = new Concept50();
 	}
 	
 	// Notice the explicitly apply call
-	@Test	
+	@Test
 	public void lambda() {
 		assertThat(i(10), is(val.times.apply(i(2),i(5))));		
 	}

@@ -1,12 +1,12 @@
-package m;
+package m
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test;
 
 public class Concept50Test {
 	private Concept50 val
 	
-	@Before
+	@BeforeEach
 	void setup() {
 		val = new Concept50();
 	}

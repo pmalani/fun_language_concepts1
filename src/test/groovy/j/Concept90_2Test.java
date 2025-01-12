@@ -1,10 +1,10 @@
 package j;
 
-import org.junit.Test;
 
 import j.Concept90_2.LineItem;
 import j.Concept90_2.Product;
 import j.Concept90_2.ProductType;
+import org.junit.jupiter.api.Test;
 
 public class Concept90_2Test {
 

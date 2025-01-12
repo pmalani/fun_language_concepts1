@@ -1,12 +1,14 @@
 package m
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class Concept60Test {
 	Concept60 val
 	
-	@Before
+	@BeforeEach
 	void setup() {
 		val = new Concept60()
 	}
@@ -17,9 +19,9 @@ class Concept60Test {
 		assert val.factorial(3) == 6
 	}
 	
-	@Test(expected = StackOverflowError.class)
+	@Test
 	void facLarge() {
-		println val.factorial(10000)
+		assertThrows(StackOverflowError.class, { -> println val.factorial(10000) })
 	}
 	
 	@Test
@@ -28,8 +30,8 @@ class Concept60Test {
 		assert val.factorial2(3) == 6
 	}
 	
-	@Test(expected = StackOverflowError.class)
+	@Test
 	void fac2Large() {
-		println val.factorial2(10000)
+		assertThrows(StackOverflowError.class, { -> println val.factorial2(10000) })
 	}
 }

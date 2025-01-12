@@ -2,13 +2,13 @@ package m
 
 import m.Concept110_4.BorderedButton1
 import m.Concept110_4.BorderedButton2
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
 class Concept110_4Test {
 	Concept110_4 obj
 	
-	@Before
+	@BeforeEach
 	void setup() {
 		obj = new Concept110_4()
 	}

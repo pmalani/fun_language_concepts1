@@ -1,12 +1,13 @@
 package m
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+
 
 class Concept40ImproveTest {
 	Concept40Improve val
 	
-	@Before
+	@BeforeEach
 	void setup() {
 		val = new Concept40Improve()
 	}

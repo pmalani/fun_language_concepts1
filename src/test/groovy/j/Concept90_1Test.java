@@ -1,20 +1,23 @@
 package j;
 
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Concept90_1Test {
 	Concept90_1 val;
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		val = new Concept90_1();
 	}
 	
-	@Test(expected = NullPointerException.class)
+	@Test
 	public void whenNull() {
 		String name = null;
-		val.say(name);
+		assertThrows(NullPointerException.class, () -> val.say(name));
 	}
 	
 	@Test

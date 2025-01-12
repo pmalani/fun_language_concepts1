@@ -5,12 +5,12 @@ import j.Concept30.Converter;
 import j.Concept30.Factory;
 import j.Concept30.Person;
 import j.Concept30.Worker;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Before;
-import org.junit.Test;
 
 public class Concept30Test {
 	private Person person;
@@ -20,7 +20,7 @@ public class Concept30Test {
 	private List<Person> persons;
 	private List<Worker> workers;
 
-	@Before
+	@BeforeEach
 	public void setup() {
 		objects = new ArrayList<>();
 		persons = new ArrayList<>();
