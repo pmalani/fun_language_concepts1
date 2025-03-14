@@ -1,7 +1,5 @@
 package m
 
-import java.util.concurrent.TimeUnit;
-
 class Concept40 {
 	void printFibsUpto(int n) {
 		for (int i =0; i < n; i++) {

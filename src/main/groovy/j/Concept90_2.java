@@ -6,7 +6,6 @@ public class Concept90_2 {
 		Product getProduct() {
 			return null;
 		}
-		
 	}
 	
 	public static class Product {

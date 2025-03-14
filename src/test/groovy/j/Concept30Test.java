@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class Concept30Test {
 
@@ -51,4 +53,11 @@ public class Concept30Test {
 	}
 
 	// So, PECS: Producer extends, Consumer super (see Effective Java)
+
+	@Test
+	public void arrays() {
+		Person[] pa = new Worker[5];
+		pa[0] = new Worker();
+		assertThrows(ArrayStoreException.class, () -> pa[1] = new Person());
+	}
 }
